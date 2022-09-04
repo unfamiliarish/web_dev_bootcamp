@@ -21,7 +21,7 @@
         <div>
             <p> Select a Race:</p>
             <div>
-                <input type="radio" id="funrun" name="race_type" value="funrun">
+                <input type="radio" id="funrun" name="race_type" value="funrun" checked="on">
                 <label for="funrun">Fun Run 5k</label>
             </div>
             <div> <input type="radio" id="half" name="race_type" value="half">
@@ -31,21 +31,21 @@
                 <label for="full">Full Marathon</label>
             </div>
         </div>
-        <p>
+        <div>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
             <label for="pass">Password</label>
             <input type="password" id="password" name="password" required>
-        </p>
-        <p>
-            <label for="age">Select Age Group</label>
-            <select id="age" name="age">
-                <option value="lt_18">under 18</option>
-                <option value="18_30">18-30</option>
-                <option value="31_49">31-49</option>
-                <option value="ge_50">50+</option>
+        </div>
+        <div>
+            <label for="division">Select Age Group</label>
+            <select id="division" name="division">
+                <option value="kids">under 18</option>
+                <option value="young_adults">18-30</option>
+                <option value="adults">31-49</option>
+                <option value="seniors">50+</option>
             </select>
-        </p>
+        </div>
         <button type="submit">Register!</button>
     </form>
 </body>
