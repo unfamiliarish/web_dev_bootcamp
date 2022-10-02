@@ -18,3 +18,5 @@ Each section in the course that has at least one code exercise has a directory. 
         * An exploration of many different flexbox properties and attributes.
     * 111-112_media_queries
         * Exploring media queries, including 3 types of formatting for changing text color based on screen width.
+    * 112_responsive_nav_code_along
+        * Building a web page with a navbar that restyles the page based on width. H1 has different font sizes and colors, navbar has different font sizes and restyles to collapse when screen width is smaller
