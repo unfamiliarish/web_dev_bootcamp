@@ -16,3 +16,5 @@ Each section in the course that has at least one code exercise has a directory. 
 * s10 
     * 101-109_flexbox_properties
         * An exploration of many different flexbox properties and attributes.
+    * 111-112_media_queries
+        * Exploring media queries, including 3 types of formatting for changing text color based on screen width.
