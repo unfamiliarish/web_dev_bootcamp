@@ -1,5 +1,5 @@
 body {
-    background: #f5d9df;
+    background: #f5d9d5;
     font-family: "Nunito", sans-serif;
 }
 
@@ -28,17 +28,36 @@ body {
 
 #headingGroup h1 {
     font-weight: 200;
-    font-size: 4em;
+    font-size: 3em;
 }
 
-@media(max-width:1400px) {
-    #headingGroup h1 {
-        font-size: 3.5rem;
-    }
+
+.content {
+    margin-top: 100px;
 }
+
+.blurb h2 {
+    color: #ea1c2c;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.blurb p {
+    color: #f498b8;
+    font-weight: 200;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
 
 @media (max-width:1200px) {
     #headingGroup h1 {
-        font-size: 2.9rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #headingGroup h1 {
+        font-size: 1.9rem;
     }
 }
