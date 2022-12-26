@@ -5,7 +5,7 @@ body {
 
 #mainNavbar {
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 #mainNavbar .navbar-brand {
@@ -20,4 +20,25 @@ body {
 
 #mainNavbar .nav-link:hover {
     color: #ea1c2c;
+}
+
+#headingGroup span {
+    color: #ea1c2c;
+}
+
+#headingGroup h1 {
+    font-weight: 200;
+    font-size: 4em;
+}
+
+@media(max-width:1400px) {
+    #headingGroup h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:1200px) {
+    #headingGroup h1 {
+        font-size: 2.9rem;
+    }
 }
