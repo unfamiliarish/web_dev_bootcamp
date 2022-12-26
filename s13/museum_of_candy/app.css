@@ -49,6 +49,10 @@ body {
     line-height: 2;
 }
 
+.navbar {
+    transition: background 500ms;
+}
+
 .navbar.scrolled {
     background: rgb(222, 192, 222);
 }
