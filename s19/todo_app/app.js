@@ -10,7 +10,7 @@ while (command !== "quit") {
     if (command === "new") {
         let new_todo = prompt("Enter a new todo:");
         todos.push(new_todo);
-        console.log(`Todo ${new_todo} added to list.`)
+        console.log(`${new_todo} added to list.`)
     } else if (command == "list") {
         console.log("********")
         for (const [i, todo] of todos.entries()) {
@@ -19,8 +19,12 @@ while (command !== "quit") {
         console.log("********");
     } else if (command == "delete") {
         let index = prompt("Enter index of todo you want to delete:");
-        todos.splice(index, 1);
-        console.log(`Todo ${index} deleted.`)
+        if (isNaN(index) || index < 0 || index >= todos.length) {
+            console.log("Invalid index.");
+            continue;
+        }
+        deleted = todos.splice(index, 1)[0];
+        console.log(`Deleted ${deleted}.`)
     }
 }
 console.log("Successfully exited.");
