@@ -30,4 +30,3 @@ for (let i = 1; i <= 151; i++) {
     newFigure.append(newImg, newCaption);
     container.appendChild(newFigure);
 }
-
