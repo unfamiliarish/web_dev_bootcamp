@@ -18,13 +18,14 @@ for (let i = 1; i <= 151; i++) {
         "m-1",
     );
 
+
+    // figure image
     const newImg = document.createElement("img");
     newImg.src = `${basePokemonUrl}${i}.png`;
-
+    // figure caption
     const newCaption = document.createElement("figcaption");
     newCaption.classList.add("figure-caption");
-    newCaption.innerText = `${i}`;
-
+    newCaption.innerText = `#${i}`;
 
     newFigure.append(newImg, newCaption);
     container.appendChild(newFigure);
