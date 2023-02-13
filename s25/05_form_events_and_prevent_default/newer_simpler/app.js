@@ -1,4 +1,4 @@
-const form = document.querySelector("#shelterForm");
+// const form = document.querySelector("#shelterForm");
 const input = document.querySelector("#catName");
 const catList = document.querySelector("#cats");
 
