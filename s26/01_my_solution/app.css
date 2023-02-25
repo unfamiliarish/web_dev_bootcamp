@@ -1,0 +1,29 @@
+/* button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+font-size: 1rem;
+line-height: 1;
+background: transparent;
+-webkit-appearance: none;
+}
+
+*/
+.buttons {
+    padding: 0;
+}
+
+.myButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: hidden;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.panel-block {
+    padding-bottom: 0;
+}
