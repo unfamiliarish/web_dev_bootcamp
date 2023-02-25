@@ -1,16 +1,7 @@
-/* button {
-    display: inline-block;
-    border: none;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-font-size: 1rem;
-line-height: 1;
-background: transparent;
--webkit-appearance: none;
+.gameContent {
+    display: block;
 }
 
-*/
 .buttons {
     padding: 0;
 }
@@ -18,12 +9,23 @@ background: transparent;
 .myButton {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-style: hidden;
+    border: none;
     border-radius: 0;
     margin-bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    word-wrap: break-word;
+    white-space: normal !important;
 }
 
 .panel-block {
     padding-bottom: 0;
+}
+
+.winner {
+    color: hsl(141, 53%, 53%);
+}
+
+.loser {
+    color: hsl(348, 100%, 61%);
 }

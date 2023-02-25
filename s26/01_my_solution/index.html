@@ -26,7 +26,7 @@
                 <div class="panel-block">
                     <span class="has-text-weight-medium">Ping Pong Score Keeper</span>
                 </div>
-                <div class="panel-block" style="display:block">
+                <div class="panel-block gameContent">
                     <div>
                         <div class="title is-1">
                             <span id="player1Score">0</span> to
@@ -34,9 +34,9 @@
                         </div>
                         Use the buttons below to keep score.
                     </div>
-                    <div class="py-3">
+                    <div class="pt-3 pb-4">
                         Playing To:
-                        <select name="goal" id="goalVal">
+                        <select name="goalScore" id="goalScore">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3" selected>3</option>
@@ -46,12 +46,15 @@
                     </div>
                 </div>
                 <div id="buttons" class="panel-block columns has-text-white has-text-centered">
-                    <!-- <button id="score1Plus" class="column button has-background-primary myButton">+1 Player One</button>
-                    <button id="score2Plus" class="column button has-background-info myButton">+1 Player Two</button>
-                    <button id="reset" class="column button has-background-danger myButton">Reset</button> -->
-                    <div id="score1Plus" class="column has-background-primary myButton">+1 Player One</div>
-                    <div id="score2Plus" class="column has-background-info myButton">+1 Player Two</div>
-                    <div id="reset" class="column has-background-danger myButton">Reset</div>
+                    <button id="score1Plus" class="column button has-background-primary has-text-white myButton">
+                        +1 Player One
+                    </button>
+                    <button id="score2Plus" class="column button has-background-info has-text-white myButton">
+                        +1 Player Two
+                    </button>
+                    <button id="reset" class="column button has-background-danger has-text-white myButton">
+                        Reset
+                    </button>
                 </div>
             </div>
         </div>
