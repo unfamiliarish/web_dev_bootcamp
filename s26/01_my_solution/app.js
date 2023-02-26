@@ -9,31 +9,33 @@ const score1Plus = document.querySelector("#score1Plus");
 const score2Plus = document.querySelector("#score2Plus");
 const reset = document.querySelector("#reset");
 
-setMaxHeight(score1Plus, score2Plus, reset);
 
-window.addEventListener("resize", () => {
-    resetHeight(score1Plus, score2Plus, reset);
-    setMaxHeight(score1Plus, score2Plus, reset);
-});
+let score1 = 0;
+let score2 = 0;
 
 score1Plus.addEventListener("click", () => {
-    player1Score.innerText = parseInt(player1Score.innerText) + 1;
+    player1Score.innerText = score1 + 1;
+    score1++;
+
     goalScoreDropdown.setAttribute("disabled", "disabled");
     goalScore = goalScoreDropdown.value;
 
-    player1Score.innerText == goalScore && endGame();
+    score1 == goalScore && endGame();
 });
 
 score2Plus.addEventListener("click", () => {
-    player2Score.innerText = parseInt(player2Score.innerText) + 1;
+    player2Score.innerText = score2 + 1;
+    score2++;
+
     goalScoreDropdown.setAttribute("disabled", "disabled");
     goalScore = goalScoreDropdown.value;
 
-    player2Score.innerText == goalScore && endGame();
+    score2 == goalScore && endGame();
 });
 
 reset.addEventListener("click", () => {
     player1Score.innerText = player2Score.innerText = 0;
+    score1 = score2 = 0;
 
     for (let element of [goalScoreDropdown, score1Plus, score2Plus]) {
         element.removeAttribute("disabled");
@@ -56,6 +58,13 @@ function endGame() {
     winner.classList.add("winner");
     loser.classList.add("loser");
 };
+
+setMaxHeight(score1Plus, score2Plus, reset);
+
+window.addEventListener("resize", () => {
+    resetHeight(score1Plus, score2Plus, reset);
+    setMaxHeight(score1Plus, score2Plus, reset);
+});
 
 function setMaxHeight(...buttons) {
     let max = 0;
