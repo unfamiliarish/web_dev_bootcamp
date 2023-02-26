@@ -17,7 +17,7 @@ score1Plus.addEventListener("click", () => {
     player1Score.innerText = score1 + 1;
     score1++;
 
-    goalScoreDropdown.setAttribute("disabled", "disabled");
+    goalScoreDropdown.disabled = true;
     goalScore = goalScoreDropdown.value;
 
     score1 == goalScore && endGame();
@@ -27,7 +27,7 @@ score2Plus.addEventListener("click", () => {
     player2Score.innerText = score2 + 1;
     score2++;
 
-    goalScoreDropdown.setAttribute("disabled", "disabled");
+    goalScoreDropdown.disabled = true;
     goalScore = goalScoreDropdown.value;
 
     score2 == goalScore && endGame();
@@ -38,7 +38,7 @@ reset.addEventListener("click", () => {
     score1 = score2 = 0;
 
     for (let element of [goalScoreDropdown, score1Plus, score2Plus]) {
-        element.removeAttribute("disabled");
+        element.disabled = false;
     }
 
     player1Score.classList.remove("winner", "loser");
@@ -47,8 +47,8 @@ reset.addEventListener("click", () => {
 
 function endGame() {
     // ends the game
-    score1Plus.setAttribute("disabled", "disabled");
-    score2Plus.setAttribute("disabled", "disabled");
+    score1Plus.disabled = true;
+    score2lus.disabled = true;
 
     const score1 = player1Score.innerText;
     const score2 = player2Score.innerText;
