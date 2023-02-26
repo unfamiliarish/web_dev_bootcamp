@@ -23,9 +23,11 @@
 }
 
 .winner {
+    /* https://bulma.io/documentation/overview/colors/ */
     color: hsl(141, 53%, 53%);
 }
 
 .loser {
+    /* https://bulma.io/documentation/overview/colors/ */
     color: hsl(348, 100%, 61%);
 }
