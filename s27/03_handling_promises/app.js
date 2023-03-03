@@ -63,33 +63,33 @@ const fakeRequestPromise = (url, reject_ = false) => {
 
 /* -- nested request with callbacks -- */
 
-// fakeRequestCallback("books.com/page1",
-//     function (response) {
-//         console.log("it worked!");
-//         console.log(response);
-//         fakeRequestCallback("books.com/page2",
-//             function (response) {
-//                 console.log("it worked again");
-//                 console.log(response);
-//                 fakeRequestCallback("books.com/page3",
-//                     function (request) {
-//                         console.log("worked the 3rd time");
-//                         console.log(request);
-//                     },
-//                     function (err) {
-//                         console.log(`the 3rd error: ${err}`);
-//                     })
-//             },
-//             function (err) {
-//                 console.log(`2nd error: ${err}`);
-//             }
-//         );
-//     },
-//     function (err) {
-//         console.log("error");
-//         console.log(`error: ${err}`);
-//     }
-// );
+fakeRequestCallback("books.com/page1",
+    function (response) {
+        console.log("it worked!");
+        console.log(response);
+        fakeRequestCallback("books.com/page2",
+            function (response) {
+                console.log("it worked again");
+                console.log(response);
+                fakeRequestCallback("books.com/page3",
+                    function (request) {
+                        console.log("worked the 3rd time");
+                        console.log(request);
+                    },
+                    function (err) {
+                        console.log(`the 3rd error: ${err}`);
+                    })
+            },
+            function (err) {
+                console.log(`2nd error: ${err}`);
+            }
+        );
+    },
+    function (err) {
+        console.log("error");
+        console.log(`error: ${err}`);
+    }
+);
 
 
 /* -- nested promises. not much better in formatting, but better -- */
